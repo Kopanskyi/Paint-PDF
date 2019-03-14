@@ -1,0 +1,19 @@
+﻿<Window x:Class="PDFDocument.WFind"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PDFDocument"
+        mc:Ignorable="d"
+        Title="WFind" Height="174.12" Width="512.437">
+    <Grid>
+        <Canvas>
+            <TextBox Name="txtFind" Text="Gigabit" Width="200" Height="40" Canvas.Left="23" Canvas.Top="21" ></TextBox>
+            <Button Name="btnFind" Content="Find" Width="200" Height="40" Canvas.Left="24" Canvas.Top="78" Click="BtnFind_Click" ></Button>
+            <ListBox Name="lbPages" Width="200" Height="110" ItemsSource="{Binding}" Canvas.Left="283" Canvas.Top="15">
+                
+            </ListBox>
+        
+        </Canvas>
+    </Grid>
+</Window>
